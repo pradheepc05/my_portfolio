@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Pradheep C - Software Engineering Student Portfolio">
+    <meta property="og:description" content="Explore the portfolio of Pradheep C, featuring innovative web development projects and software engineering solutions.">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">Pradheep C</div>
+                
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#certificates" class="nav-link">Certificates</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <button class="nav-toggle" id="nav-toggle">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+            
+            <div class="nav-mobile" id="nav-mobile">
+                <a href="#home" class="nav-mobile-link">Home</a>
+                <a href="#about" class="nav-mobile-link">About</a>
+                <a href="#projects" class="nav-mobile-link">Projects</a>
+                <a href="#certificates" class="nav-mobile-link">Certificates</a>
+                <a href="#contact" class="nav-mobile-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Pradheep C</h1>
+                    <h2 class="hero-subtitle">Software Engineering Student</h2>
+                    <p class="hero-description">
+                        Passionate about creating innovative solutions through code. Currently pursuing MSc Software Engineering 
+                        with a focus on modern web technologies and software development practices.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('#projects')">
+                            View My Work
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="btn btn-secondary" onclick="window.open('Pradheep_Resume.pdf')">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <img src="profile.jpg" alt="Pradheep C - Software Engineering Student" class="profile-image">
+                        <div class="profile-ring"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-bio">
+                    <div class="bio-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education & Background</h3>
+                    </div>
+                    
+                    <div class="education-card">
+                        <h4>MSc Software Engineering</h4>
+                        <p class="university">Annamalai University</p>
+                        <p class="duration">2022 – 2027</p>
+                    </div>
+                    
+                    <p class="bio-text">
+                        I'm a dedicated software engineering student with a passion for creating innovative 
+                        digital solutions. My journey in technology is driven by curiosity and a desire to 
+                        solve real-world problems through code.
+                    </p>
+                    
+                    <p class="bio-text">
+                        I enjoy exploring new technologies, building projects that make a difference, and 
+                        continuously expanding my skill set. I'm particularly interested in web development, 
+                        software architecture, and creating user-centric applications.
+                    </p>
+                </div>
+                
+                <div class="skills-section">
+                    <h3 class="skills-title">Technical Skills</h3>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="Python">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-card" data-skill="Linux">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="skill-card" data-skill="Networking">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Networking</span>
+                        </div>
+                        <div class="skill-card" data-skill="C">
+                            <i class="fas fa-code"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-card" data-skill="C++">
+                            <i class="fas fa-code"></i>
+                            <span>C++</span>
+                        </div>
+                        
+                        <div class="skill-card" data-skill="Java">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-card" data-skill="HTML">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-card" data-skill="CSS">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-card" data-skill="JavaScript">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-card" data-skill="MySQL">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-card" data-skill="Git">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-card" data-skill="VS Code">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Here are some of my recent projects that showcase my skills in web development, 
+                    software engineering, and problem-solving.
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop" alt="E-Commerce Platform">
+                        <div class="project-overlay"></div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            A full-stack e-commerce solution with user authentication, product management, and payment integration. Features responsive design and modern UI/UX.
+                        </p>
+                        
+                        <div class="project-technologies">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <button class="btn btn-outline" onclick="window.open('https://github.com/pradheepc05/ecommerce-platform', '_blank')">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </button>
+                            <button class="btn btn-primary" onclick="window.open('https://ecommerce-demo.vercel.app', '_blank')">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop" alt="Task Management App">
+                        <div class="project-overlay"></div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.
+                        </p>
+                        
+                        <div class="project-technologies">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <button class="btn btn-outline" onclick="window.open('https://github.com/pradheepc05/task-manager', '_blank')">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </button>
+                            <button class="btn btn-primary" onclick="window.open('https://taskmanager-demo.vercel.app', '_blank')">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop" alt="Weather Analytics Dashboard">
+                        <div class="project-overlay"></div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Analytics Dashboard</h3>
+                        <p class="project-description">
+                            A comprehensive weather analytics dashboard featuring data visualization, location-based forecasts, and historical weather data analysis.
+                        </p>
+                        
+                        <div class="project-technologies">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">OpenWeather API</span>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <button class="btn btn-outline" onclick="window.open('https://github.com/pradheepc05/weather-dashboard', '_blank')">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </button>
+                            <button class="btn btn-primary" onclick="window.open('https://weather-analytics.herokuapp.com', '_blank')">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-footer">
+                <button class="btn btn-outline-large" onclick="window.open('https://github.com/pradheepc05', '_blank')">
+                    <i class="fab fa-github"></i>
+                    View More on GitHub
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="certificates" class="certificates">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Certifications</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">
+                Professional certifications and achievements that validate my technical expertise and commitment to continuous learning.
+            </p>
+        </div>
+
+        <div class="certifications-grid">
+            <div class="certificate-card">
+                <div class="certificate-image">
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=500&h=300&fit=crop" alt="Python Programming Certification">
+                </div>
+                <div class="certificate-content">
+                    <h3 class="certificate-title">Python Programming</h3>
+                    <p class="certificate-provider">Python Institute</p>
+                    <p class="certificate-description">
+                        Advanced Python programming certification covering data structures, algorithms, and object-oriented programming.
+                    </p>
+                    <div class="certificate-technologies">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Data Structures</span>
+                        <span class="tech-tag">OOP</span>
+                        <span class="tech-tag">Algorithms</span>
+                    </div>
+                    <div class="certificate-buttons">
+                        <a href="link-to-certificate.pdf" target="_blank" class="btn btn-primary btn-full">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certificate-card">
+                <div class="certificate-image">
+                    <img src="https://images.unsplash.com/photo-1507721999472-8fd41443c28c?w=500&h=300&fit=crop" alt="Database Management Certification">
+                </div>
+                <div class="certificate-content">
+                    <h3 class="certificate-title">Database Management</h3>
+                    <p class="certificate-provider">Oracle</p>
+                    <p class="certificate-description">
+                        Professional certification in database design, management, and optimization techniques.
+                    </p>
+                    <div class="certificate-technologies">
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Database Design</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Optimization</span>
+                    </div>
+                    <div class="certificate-buttons">
+                        <a href="link-to-certificate.pdf" target="_blank" class="btn btn-primary btn-full">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certificate-card">
+                <div class="certificate-image">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&h=300&fit=crop" alt="Linux System Administration Certification">
+                </div>
+                <div class="certificate-content">
+                    <h3 class="certificate-title">Linux System Administration</h3>
+                    <p class="certificate-provider">Linux Foundation</p>
+                    <p class="certificate-description">
+                        Comprehensive certification covering Linux system administration and network management.
+                    </p>
+                    <div class="certificate-technologies">
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">System Admin</span>
+                        <span class="tech-tag">Shell Scripting</span>
+                        <span class="tech-tag">Networking</span>
+                    </div>
+                    <div class="certificate-buttons">
+                        <a href="link-to-certificate.pdf" target="_blank" class="btn btn-primary btn-full">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-footer">
+            <button class="btn btn-outline-large" onclick="window.open('link-to-more-certificates', '_blank')">
+                <i class="fa-solid fa-diagram-project"></i>
+                View All Certifications
+            </button>
+        </div>
+    </div>
+</section><!-- <-- ADD THIS LINE to properly close the certificates section -->
+
+<div class="continuous-learning">
+    <h1>Continuous Learning</h1>
+    <p>
+
+    </p>
+    <p>
+        I'm always pursuing new certifications and learning opportunities to stay current with
+        emerging technologies and industry best practices.
+    </p>
+</div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    I'm always open to discussing new opportunities, interesting projects, 
+                    or just having a chat about technology. Feel free to reach out!
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    
+                    <div class="contact-cards">
+                        <div class="contact-card" onclick="window.open('mailto:pradheepc05@gmail.com', '_blank')">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p class="contact-label">Email</p>
+                                <p class="contact-value">pradheepc05@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card" onclick="window.open('https://linkedin.com/in/pradheepc05', '_blank')">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p class="contact-label">LinkedIn</p>
+                                <p class="contact-value">linkedin.com/in/pradheepc05</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card" onclick="window.open('https://github.com/pradheepc05', '_blank')">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p class="contact-label">GitHub</p>
+                                <p class="contact-value">github.com/pradheepc05</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="opportunities">
+                        <h4>Looking for opportunities in:</h4>
+                        <ul>
+                            <li>• Software Development Internships</li>
+                            <li>• Web Development Projects</li>
+                            <li>• Open Source Collaborations</li>
+                            <li>• Technical Mentorship</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Contact Form Section -->
+                <div class="contact-form-container">
+                    <div class="contact-form-card">
+                        <h3>Send a Message</h3>
+                        <p class="form-description">
+                            Fill out the form below and I'll get back to you as soon as possible.
+                        </p>
+                        <form id="contact-form" class="contact-form"
+                            action="https://formspree.io/f/mblkvajd"
+                            method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or just say hello!" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Pradheep C. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
